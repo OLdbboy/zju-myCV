@@ -119,12 +119,12 @@
 % --- 第一个项目 ---
 % 将标题行末尾的 \\ 替换为 \titlebreak 命令
 \textbf{Ultra-R256高速超声开放平台} \hfill 2024.9 -- 2025.6 \titlebreak
-项目描述：面向超声科研应用需求，自主研制 128 通道\textbf{高速超声采集卡}及\textbf{可编程相控阵超声发射卡}，通过背板实现硬件互联，结合上位机软件算法完成 256 通道高速超声科研平台搭建，该平台已实现\textbf{产品化落地}。本人主要负责\textbf{FPGA}部分
+自主研制 128 通道\textbf{高速超声采集卡}及\textbf{可编程相控阵超声发射卡}，通过背板实现硬件互联，结合上位机软件算法完成 256 通道高速超声科研平台搭建，该平台已实现\textbf{产品化落地}。本人主要负责\textbf{FPGA}部分
 % 在 itemize 的选项中，使用 topsep=\intraProjectListTopSep 来控制上边距
 \begin{itemize}[nosep, topsep=\intraProjectListTopSep]
-    \item \textbf{高速数据采集}：基于\textbf{高速 LVDS 接口}完成TI AFE5818超声模拟前端高达\textbf{960 Mbps}高速数据流的解串处理，通过 FPGA 实现数据缓存与协议封装，并将采集数据上传至上位机
-    \item \textbf{高通量数据传输}：通过\textbf{40 Gbps光口}实现超声采集卡与上位机的指令交互及采样数据高速传输，在FPGA上完成\textbf{40G 以太网UDP协议栈}的完整开发与验证
-    \item \textbf{可编程超声发射}：可编程相控阵超声发射卡接收上位机定义的超声发射序列并缓存至板载\textbf{DDR}，FPGA根据触发信号实时读取发射序列并控制发射电路
+    \item \textbf{高速数据采集}：基于\textbf{高速 LVDS 接口}完成TI AFE5818超声模拟前端高达\textbf{960 Mbps}高速数据流的解串处理
+    \item \textbf{高通量数据传输}：在FPGA上完成\textbf{40G 以太网UDP协议栈}的开发，与上位机进行命令交互和数据传输
+    \item \textbf{可编程超声发射}：上位机定义的超声发射序列缓存至板载\textbf{DDR}，FPGA根据触发信号实时读取并控制发射电路
 \end{itemize}
 
 % 使用 \projectsep 命令来分隔两个项目
