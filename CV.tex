@@ -90,11 +90,11 @@
 
 %%%% 利用tikz来定位照片
 \begin{tikzpicture}[remember picture, overlay] 
-    \node[anchor = north east] at ($(current page.north east)+(-2cm,-1.2cm)$) {\includegraphics[height=3cm]{crp.jpg}};
+    \node[anchor = north east] at ($(current page.north east)+(-2cm,-1.5cm)$) {\includegraphics[height=3.5cm]{crp.jpg}};
   \end{tikzpicture}%
   %%%% 利用tikz来定位学校Logo，这里只在第一页显示
   \begin{tikzpicture}[remember picture, overlay] 
-    \node[anchor = north west] at ($(current page.north west)+(0.5cm,+1.0cm)$) {\includegraphics[height=6cm]{zju1.jpg}};
+    \node[anchor = north west] at ($(current page.north west)+(0.5cm,+1.0cm)$) {\includegraphics[height=3cm]{zju1.jpg}};
   \end{tikzpicture}%
 \centerline{\LARGE\bfseries{采润平}} 
 
@@ -104,12 +104,12 @@
     
 \section{\makebox[\widthof{\faGraduationCap}][c]{\color{CVBlue}\faGraduationCap}\ 教育背景}
 \textbf{浙江大学} \hfill 2024.9 -- 至今 \hfill 生物医学工程 | 硕士 \\
-\begin{itemize}[nosep]
+\begin{itemize}[nosep, topsep=0pt, partopsep=0pt, after=\vspace{-0.5em}]
     \item 研究方向：高速超声开放平台、超声成像算法
 \end{itemize}
 荣誉：优秀研究生 \\[0.5em]
 \textbf{华中科技大学} \hfill 2020.9 -- 2024.6 \hfill 测控技术与仪器 | 本科 \\
-\begin{itemize}[nosep]
+\begin{itemize}[nosep, topsep=0pt, partopsep=0pt, after=\vspace{-0.5em}]
     \item 主修课程：电路理论、模拟电子技术、数字电路与逻辑设计、传感技术与信号电路、机电控制与检测
 \end{itemize}
 荣誉：优秀毕业生、三好学生 \hfill GPA: 3.98/4
