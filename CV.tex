@@ -134,17 +134,17 @@
 \textbf{Ultra-S256高速超声开放平台} \hfill 2025.09 -- 至今 \titlebreak
 基于Ultra-R256迭代升级，优化硬件架构与互联方案，打造高采样率、大带宽、全功能的新一代超声开放平台，目前已实现\textbf{产品化落地}(详见https://www.cancare3d.cn/products/ultra-s/) 。本人负责全流程FPGA开发
 \begin{itemize}[nosep, topsep=\intraProjectListTopSep]
-    \item \textbf{超声收发}：基于\textbf{JESD204B协议}完成信号采集，在帧间读取DDR中缓存发射序列控制超声发射波束形成
-    \item \textbf{数据链路}：搭建端到端高通量超声数据传输体系，包括\textbf{JESD204B}，\textbf{DDR缓存}，\textbf{AURORA高速通信}，\textbf{PCIe DMA交互}
-    \item \textbf{信号处理}：在FPGA中实现\textbf{完整超声信号预处理流水线}，完成FIR滤波(高通+带通)、多速率下采样、IQ正交解调等算法落地
-	\item \textbf{在线更新}：开发\textbf{DDR仲裁器}实现多路数据流高效调度，同时完成FPGA在线固件更新功能开发
+    \item \textbf{超声收发}：基于\textbf{Serdes}和\textbf{JESD204B协议}完成信号采集，在帧间读取DDR中缓存发射序列控制超声发射集成芯片进行波束形成
+    \item \textbf{数据链路}：搭建端到端高通量超声数据传输链路，包括\textbf{JESD204B}，\textbf{DDR缓存}，\textbf{AURORA高速通信}，\textbf{PCIe DMA交互}
+    \item \textbf{信号处理}：在FPGA中实现\textbf{完整超声信号预处理流水线}，完成FIR滤波(高通+带通)、多速率下采样、IQ正交解调等算法部署
+	\item \textbf{在线更新}：开发\textbf{DDR仲裁器}实现多路数据流高效调度，完成FPGA在线固件更新功能开发
 \end{itemize}
 
 \section{\makebox[\widthof{\faCogs}][c]{\color{CVBlue}\faCogs}\ 技术栈}
 \begin{itemize}[nosep]
-    \item \textbf{高速接口：} \textbf{Go}, Python, C++
-    \item \textbf{算法部署：} SSH, Git, Vim, MakeFile,LaTex
-    \item \textbf{时序优化：} Linux
+    \item \textbf{高速接口：} 具备多种高速接口协议的开发和调试经验，包括\textbf{JESD204B}、\textbf{AURORA}、\textbf{PCIe}、\textbf{40 G以太网}等
+    \item \textbf{算法部署：} 熟悉数字信号处理算法实现，具备\textbf{MATLAB与FPGA联合仿真、算法移植及验证}经验
+    \item \textbf{时序优化：} 掌握数字系统时序分析理论，熟练数字系统\textbf{时序约束}、\textbf{时序优化}及\textbf{时序违例修复}
 \end{itemize}
 \section{\makebox[\widthof{\faGraduationCap}][c]{\color{CVBlue}\faList}\ 获奖情况}
 \begin{itemize}
