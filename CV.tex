@@ -119,10 +119,10 @@
 % --- 第一个项目 ---
 % 将标题行末尾的 \\ 替换为 \titlebreak 命令
 \textbf{Ultra-R256高速超声开放平台} \hfill 2024.9 -- 2025.6 \titlebreak
-自主研制 128 通道\textbf{高速超声采集卡}及\textbf{可编程相控阵超声发射卡}，通过背板实现硬件互联，结合上位机软件算法完成 256 通道高速超声科研平台搭建，该平台已实现\textbf{产品化落地}。本人主要负责\textbf{FPGA}部分
+自主研制128通道\textbf{高速超声采集卡}及\textbf{可编程相控阵超声发射卡}，通过背板实现硬件互联，结合上位机软件算法完成256通道高速超声科研平台搭建，该平台已实现\textbf{产品化落地}。本人主要负责\textbf{FPGA}部分
 % 在 itemize 的选项中，使用 topsep=\intraProjectListTopSep 来控制上边距
 \begin{itemize}[nosep, topsep=\intraProjectListTopSep]
-    \item \textbf{高速数据采集}：基于\textbf{高速 LVDS 接口}完成TI AFE5818超声模拟前端高达\textbf{960 Mbps}高速数据流的解串处理
+    \item \textbf{高速数据采集}：基于\textbf{高速LVDS接口}完成超声模拟前端芯片单通道高达\textbf{960 Mbps}高速数据流的解串处理
     \item \textbf{高通量数据传输}：在FPGA上完成\textbf{40G 以太网UDP协议栈}的开发，与上位机进行命令交互和数据传输
     \item \textbf{可编程超声发射}：上位机定义的超声发射序列缓存至板载\textbf{DDR}，FPGA根据触发信号实时读取并控制发射电路
 \end{itemize}
@@ -131,19 +131,20 @@
 \projectsep
 
 % --- 第二个项目 ---
-\textbf{AIGC驱动的超进化自动挖坑机 (Agent)} \hfill 2025.02 -- 至今 \titlebreak
-项目描述：为探索心灵版规的边界，以及测试版主锁沉反应速度的极限，本项目基于\textbf{多智能体协作(MCP)与LLM}技术，开发了一款能\textbf{自主“挖坑”与“互坑”}的AI Agent。
+\textbf{Ultra-S256高速超声开放平台} \hfill 2025.09 -- 至今 \titlebreak
+基于Ultra-R256迭代升级，优化硬件架构与互联方案，打造高采样率、大带宽、全功能的新一代超声开放平台，目前已实现\textbf{产品化落地}(详见https://www.cancare3d.cn/products/ultra-s/) 。本人负责全流程FPGA开发
 \begin{itemize}[nosep, topsep=\intraProjectListTopSep]
-    \item \textbf{并发与调度}：后端采用 \textbf{Go} 语言，充分利用 \textbf{Goroutine} 和 \textbf{Channel} 的高并发模型，模拟\textbf{用户并发在线}，执行定时挖坑，确保挖坑行动的\textbf{隐蔽性}与\textbf{高效性}。
-    \item \textbf{实时监控与响应}：运用 \textbf{WebSocket} 协议实现了对目标帖子的\textbf{实时监听与交互}。确保在烂坑被识破的第一时间，Agent能光速完成\textbf{“lktp”}或\textbf{反向钓鱼}操作，展现出极高的AI博弈能力。
-    \item \textbf{可视化GUI}：前端使用 \textbf{React} 框架构建了\textbf{后台管理的可视化面板 (Admin Panel)}。可一键下达挖坑指令、动态调整Agent的\textbf{指令}、并实时监控数据。
+    \item \textbf{超声收发}：基于\textbf{JESD204B协议}完成信号采集，在帧间读取DDR中缓存发射序列控制超声发射波束形成
+    \item \textbf{数据链路}：搭建端到端高通量超声数据传输体系，包括\textbf{JESD204B}，\textbf{DDR缓存}，\textbf{AURORA高速通信}，\textbf{PCIe DMA交互}
+    \item \textbf{信号处理}：在FPGA中实现\textbf{完整超声信号预处理流水线}，完成FIR滤波(高通+带通)、多速率下采样、IQ正交解调等算法落地
+	\item \textbf{在线更新}：开发\textbf{DDR仲裁器}实现多路数据流高效调度，同时完成FPGA在线固件更新功能开发
 \end{itemize}
 
 \section{\makebox[\widthof{\faCogs}][c]{\color{CVBlue}\faCogs}\ 技术栈}
 \begin{itemize}[nosep]
-    \item \textbf{编程语言：} \textbf{Go}, Python, C++
-    \item \textbf{开发工具：} SSH, Git, Vim, MakeFile,LaTex
-    \item \textbf{操作系统：} Linux
+    \item \textbf{高速接口：} \textbf{Go}, Python, C++
+    \item \textbf{算法部署：} SSH, Git, Vim, MakeFile,LaTex
+    \item \textbf{时序优化：} Linux
 \end{itemize}
 \section{\makebox[\widthof{\faGraduationCap}][c]{\color{CVBlue}\faList}\ 获奖情况}
 \begin{itemize}
